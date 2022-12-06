@@ -1,0 +1,11 @@
+### Git ###
+!/.gitignore
+!/.gitmodules
+### Logs ###
+logs
+*.log
+### NPM modules ###
+node_modules
+### Custom ignores ###
+config.js
+.idea

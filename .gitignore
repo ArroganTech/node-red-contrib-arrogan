@@ -1,0 +1,13 @@
+### Logs ###
+logs
+*.log
+### NPM modules ###
+node_modules
+### Custom ignores ###
+config.js
+.idea
+### ide / editors ###
+.vscode
+### Libraries don't need locks files ###
+yarn.lock
+package-lock.json

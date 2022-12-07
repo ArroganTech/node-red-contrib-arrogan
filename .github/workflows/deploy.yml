@@ -3,6 +3,11 @@ on:
   push:
     branches: [ '*' ]
     tags: [ '*' ]
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: '0 15 * * 1-5'
+  workflow_dispatch: 
 jobs:
   deploy:
     name: Deploy

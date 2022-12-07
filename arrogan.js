@@ -10,7 +10,7 @@ module.exports = function (RED) {
         node.on('input', async function (msg) {
             await this.arroganClient.authorization();
             var data = await this.arroganClient.getInstance();
-            msg.test = data.status;
+            msg.respoonse = data.status;
             node.send(msg)
 
         });
@@ -23,7 +23,7 @@ module.exports = function (RED) {
         node.on('input', async function (msg) {
             await this.arroganClient.authorization();
             var data = await this.arroganClient.getBalance();
-            msg.test = data;
+            msg.respoonse = data;
             node.send(msg)
 
         });
@@ -36,7 +36,7 @@ module.exports = function (RED) {
         node.on('input', async function (msg) {
             await this.arroganClient.authorization();
             var data = await this.arroganClient.startInstance();
-            msg.test = data;
+            msg.respoonse = data;
             node.send(msg)
 
         });
@@ -49,7 +49,7 @@ module.exports = function (RED) {
         node.on('input', async function (msg) {
             await this.arroganClient.authorization();
             var data = await this.arroganClient.stopInstance();
-            msg.test = data;
+            msg.respoonse = data;
             node.send(msg)
 
         });
